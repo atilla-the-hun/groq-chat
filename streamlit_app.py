@@ -3,7 +3,7 @@ from typing import Generator
 from groq import Groq
 
 st.set_page_config(page_icon="💬", layout="wide",
-                   page_title="Groq Goes Brrrrrrrr...")
+                   page_title="Bring the speed.....")
 
 
 def icon(emoji: str):
@@ -13,10 +13,9 @@ def icon(emoji: str):
         unsafe_allow_html=True,
     )
 
+icon("💬")
 
-icon("🏎️")
-
-st.subheader("Groq Chat Streamlit App", divider="rainbow", anchor=False)
+st.subheader("Chat for free using the power and speed of Groq", divider="rainbow", anchor=False)
 
 client = Groq(
     api_key=st.secrets["GROQ_API_KEY"],
